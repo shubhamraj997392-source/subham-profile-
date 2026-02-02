@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Me</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f172a, #020617);
+            color: #ffffff;
+        }
+
+        .about-section {
+            max-width: 1100px;
+            margin: 60px auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .about-img {
+            text-align: center;
+            animation: fadeInLeft 1.2s ease;
+        }
+
+        .about-img img {
+            width: 300px;        /* yahan size bada/small kar sakte ho */
+            height: 300px;       /* width aur height SAME rakho */
+            border-radius: 50%;  /* full round shape */
+            object-fit: cover;  /* image stretch nahi hogi */
+            border: 4px solid #00e5ff; /* optional glowing border */
+}
+        }
+
+        .about-content {
+            animation: fadeInRight 1.2s ease;
+        }
+
+        .about-content h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+            color: #38bdf8;
+        }
+
+        .about-content h3 {
+            font-size: 22px;
+            margin-bottom: 20px;
+            color: #cbd5f5;
+        }
+
+        .about-content p {
+            font-size: 17px;
+            line-height: 1.7;
+            margin-bottom: 25px;
+            color: #e5e7eb;
+        }
+
+        .info {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .info div {
+            background: #020617;
+            padding: 12px 15px;
+            border-radius: 10px;
+            font-size: 15px;
+            border-left: 4px solid #38bdf8;
+        }
+
+        .info span {
+            color: #38bdf8;
+            font-weight: bold;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #38bdf8;
+            color: #020617;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 30px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #22c55e;
+            transform: scale(1.05);
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .about-section {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .info {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<section class="about-section">
+
+    <div class="about-img">
+
+        <img src="WhatsApp Image 2025-11-25 at 20.34.37 copy 2.jpeg" alt="My Photo">
+    </div>
+
+    <div class="about-content">
+        <h1>About Me</h1>
+        <h3>Web Developer & Programmer</h3>
+
+        <p>
+            Hello! My name is <b>Shubham kumar</b>. I am a passionate Web Developer
+            who has a good knowledge of HTML, CSS, JavaScript and C Programming.
+            I enjoy creating modern, responsive and user-friendly websites.
+        </p>
+
+        <p>
+            I continuously seek new technologies and improve my skills.
+            My goal is to become a professional software/web developer.
+        </p>
+
+        <div class="info">
+            <div><span>Name:</span> Shubham kumar</div>
+            <div><span>Role:</span> Web Developer</div>
+            <div><span>Skills:</span> HTML, CSS, JavaScript, C</div>
+            <div><span>Experience:</span> Fresher</div>
+        </div>
+
+        <a href="contact.html" class="btn">Contact Me</a>
+    </div>
+
+</section>
+
+</body>
+</html>
